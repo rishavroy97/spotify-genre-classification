@@ -249,3 +249,7 @@ The best accuracy comes from a combination of
 ![Learning Rate - accuracy iterations](https://github.com/rishavroy97/spotify-genre-classification/assets/28308372/8d67e7c6-6e78-4338-8b4e-3798790a68c9)
 
 
+
+## Step 6: Results
+
+

@@ -211,6 +211,41 @@ Gradient Boosting Trees is an ensemble learning technique that builds a series o
 
 
 
+## Step 5: Hyperparameter Tuning
 
+###  Decision Trees
+
+Without hyperparameter tuning, the accuracy for Decision trees was 23.90% which is slightly better than randomly selection one out of 6 genres (1/6 = 16.677%)
+Using the most common hyperparameters for Decision Trees, a grid search was conducted between Criterion, Minimal Gain and Maximum Depth taking 2 parameters at a time.
+
+Accuracy for the following are listed:
+
+* Criterion and Minimal Gain - **47.87% (Criterion = information_gain and Minimal Gain = 0.001)**
+* Criterion and Maximum Depth - **48.16% (Criterion = information_gain and Maximum Depth = 11)**
+* Minimal Gain and Maximum Depth - **48.22% (Criterion = information_gain and Minimal Gain = 0.001 and Maximum Depth = 11)**
+
+The best accuracy comes from the combination of 
+**1. Criterion = information_gain
+2. Minimal Gain = 0.001
+3. Maximum Depth = 11**
+
+![Criterion_MaxDepth](https://github.com/rishavroy97/spotify-genre-classification/assets/28308372/9fc6a18b-c70b-444c-b5d6-3e23efee1187)
+![MaxDepth_MinimalGain](https://github.com/rishavroy97/spotify-genre-classification/assets/28308372/79dcee5b-1d29-4fb5-a03a-889afd9e53f8)
+![Criterion_MinimalGain](https://github.com/rishavroy97/spotify-genre-classification/assets/28308372/1a9f8555-218a-42f1-9b49-5fb56cb11044)
+
+
+### Gradient Boosting
+
+Without hyperparameter tuning, the accuracy for Gradient Boosting trees was 50.42% which is better than most optimized decision tree accuracy
+Using the most common hyperparameters for Gradient Boosting, a grid search was conducted between Learning Rate and Number of trees.
+
+The best accuracy comes from a combination of
+**1. Learning Rate = 0.241
+2. number of trees = 100**
+
+**Final Accuracy - 56.1%**
+
+![Learning Rate - accuracy](https://github.com/rishavroy97/spotify-genre-classification/assets/28308372/0a7ab076-e90c-49f9-baae-ff899e002c4d)
+![Learning Rate - accuracy iterations](https://github.com/rishavroy97/spotify-genre-classification/assets/28308372/8d67e7c6-6e78-4338-8b4e-3798790a68c9)
 
 

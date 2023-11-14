@@ -1,4 +1,4 @@
-# spotify-genre-classification
+# Spotify Genre Classification
 
 Predictive Analytics on Spotify music meta-data to identify the correct genre of music
 
@@ -236,7 +236,7 @@ The best accuracy comes from the combination of
 
 ### Gradient Boosting
 
-Without hyperparameter tuning, the accuracy for Gradient Boosting trees was 50.42% which is better than most optimized decision tree accuracy
+Without hyperparameter tuning, the accuracy for Gradient Boosting trees was 50.42% which is better than the most optimized decision tree accuracy
 Using the most common hyperparameters for Gradient Boosting, a grid search was conducted between Learning Rate and Number of trees.
 
 The best accuracy comes from a combination of
@@ -252,4 +252,20 @@ The best accuracy comes from a combination of
 
 ## Step 6: Results
 
+|Models|Accuracy|
+|---|---|
+|KNN|48.50%|
+|SVM|36.27%|
+|Decision Trees|23.90%|
+|Random Forest|24.92%|
+|Gradiant Boost|50.42%|
+|Optimized Decision Trees|48.22%|
+|Optimized Gradiant Boost|56.1%|
 
+The accuracy for this project is on the lower side. 
+
+Music genre classification is difficult to perform especially today where colaboration is done among artists of different genres to create music that is an amalgamation of multiple different genres.
+
+Pop music which stands for popular music encompasses music that has become popular globally. Consequently, songs sung by R&B artists such as the Weeknd would be labelled as pop when it is technically R&B. Similarly, this dataset labels songs from popular EDM artists such as Martin Garrix as Pop. This creates a disparity between the atrributes of the song and the actual label class.
+
+A more accurate solution would be to take the Artist name into account and perform supervised learning and perform an unsupervised learning over the rest of the song attributes.
